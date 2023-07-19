@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FreeCodeCamp Certificate Evaluation Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Red+Hat+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <img src="./images/fcc_logo.png" alt="FreeCodeCamp Logo" class="logo">
+      <h1>Certificates Evaluation Survey</h1>
+      <p>Your feedback is invaluable to us as we strive to improve our certificates to better meet the needs of our students. Please take a few moments to share your thoughts on our certificates.</p>
+    </header>
+    <!--MAIN-->
+    <main>
+      <form action="index.html" method="post">
+        <!-- Personal -->
+        <fieldset>
+          <legend> Personal </legend>
+          <div class="element">
+            <label for="first-name" class="block-label">First Name</label>
+            <input type="text" name="first-name" value="" id="first-name" required class="large-input">
+          </div>
+          <div class="element">
+            <label for="last-name" class="block-label">Last Name</label>
+             <input type="text" name="last-name" value="" id="last-name" required class="large-input">
+          </div>
+          <div class="element">
+            <label for="email" class="block-label">Email</label>
+            <input type="email" name="email" value="" id="email" required class="large-input">
+          </div>
+          <div class="element">
+            <label for="age" class="block-label">Age</label>
+            <input type="number" name="age" value="" id="age" min="13" max="99" required class="large-input">
+          </div>
+        </fieldset>
+        <!-- Certificate -->
+        <fieldset>
+          <legend>Evaluation</legend>
+          <div class="element">
+            <label for="certificate" class="block-label">Certificate</label>
+            <select name="certificate">
+              <option value="0">Select a certificate to evaluate</option>
+              <option value="1">Responsive Web Design</option>
+              <option value="2">JavaScript Algorithms And Data Structures</option>
+              <option value="3">Front-End Development Libraries</option>
+              <option value="4">Data Visualization</option>
+              <option value="5">Relational Database</option>
+              <option value="6">Backend Development And APIs</option>
+              <option value="7">Quality Assurance</option>
+              <option value="8">Scientific Computing With Python</option>
+              <option value="9">Data Analysis With Python</option>
+              <option value="10">Machine Learning With Python</option>
+              <option value="11">College Algebra With Python</option>
+            </select>
+          </div>
+          <!-- Rate -->
+        <div class="element">
+          <label class="block-label question">How would you rate the overall content of the certificate?</label>
+          <input type="radio" name="rate" id="excellent" value="excellent" class="small-input">
+          <label for="excellent" class="inline-label">Excellent</label>
+        </div>
+        <div class="element">
+          <input type="radio" name="rate" id="good" value="good" class="small-input">
+          <label for="good" class="inline-label">Good</label>
+        </div>
+        <div class="element">
+          <input type="radio" name="rate" id="fair" value="fair" class="small-input">
+          <label for="fair" class="inline-label">Fair</label>
+        </div>
+        <div class="element">
+          <input type="radio" name="rate" id="poor" value="poor" class="small-input">
+          <label for="poor" class="inline-label">Poor</label>
+        </div>
+        <!-- Recommened -->
+        <div class="element">
+          <label class="block-label question">Would you recommened this certificate to fellow student or a colleague?</label>
+          <input type="radio" name="recommeneded" id="yes" value="yes" class="small-input">
+          <label for="yes" class="inline-label">Yes</label>
+        </div>
+        <div class="element">
+          <input type="radio" name="recommeneded" id="no" value="no" class="small-input">
+          <label for="no" class="inline-label">No</label>
+        </div>
+        <!-- Improvements -->
+        <div class="element">
+          <label class="block-label question">What can be improved in the certificate?</label>
+          <input type="checkbox" name="improve" id="structure" value="Structure" class="small-input">
+          <label for="structure" class="inline-label">Structure</label>
+        </div>
+        <div class="element">
+          <input type="checkbox" name="improve" id="challenges" value="Challenges" class="small-input">
+          <label for="challenges" class="inline-label">Challenges</label>
+        </div>
+        <div class="element">
+          <input type="checkbox" name="improve" id="projects" value="Projects" class="small-input">
+          <label for="projects" class="inline-label">Projects</label>
+        </div>
+        <!-- Comments -->
+        <div class="element">
+          <label for="comments" class="block-label">Comments & Suggestions</label>
+          <textarea name="comments" placeholder="I'd love if you could..."></textarea>
+        </div>
+        <div class="element">
+          <input type="submit" name="submit" value="Submit">
+        </div>
+        </fieldset>      
+      </form>
+    </main>    
+    <!--FOOTER-->
+    <footer>
+      <p>Designed & Coded By <a href="mailto:fgamal.problemsolver@gmail.com">Fathia Gamal</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/* GENRAL STYLES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  background-image: linear-gradient(120deg, rgba(10, 10, 35, 0.9), rgba(18, 18, 64, 0.9)), url('../images/binary_code.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #DADAE5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0 24px;
+}
+
+/* COMMON STYLES */
+a{
+  color: #feb83c;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* HEADER */
+header{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 36px 24px;
+  text-align: center;
+}
+.logo{
+  width: 300px;
+  margin-bottom: 28px;
+}
+h1{
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 16px;
+}
+
+/* MAIN */
+main{
+  max-width: 768px;
+  margin: 28px auto;
+  padding: 36px 24px;
+  border: 1px solid #1e1e4c;
+  border-radius: 4px;
+  background-image: linear-gradient(120deg, rgb(10, 10, 35), rgba(18, 18, 64));
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+form{
+  max-width: 600px;
+  margin: 0 auto;
+}
+fieldset{
+  padding: 24px 24px 40px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #1e1e4c;
+  border-radius: 4px;
+}
+legend{
+  padding: 0 12px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.element{
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+label{
+  font-size: 1.2rem;
+}
+label.block-label{
+  display: block;
+  margin-bottom: 8px;
+}
+label.question{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.large-input, select, textarea{
+  width: 100%;
+  color: #0a0a23;
+  background-color: #dadae5;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 14px;
+  border: none;
+}
+.small-input{
+  width: 22px;
+  height: 22px;
+  margin-right: 3px;
+  accent-color: #feb83c;
+}
+.inline-label{
+  font-size: 1rem;;
+  position: relative;
+  top: -6px;
+}
+textarea{
+  height: 120px;
+}
+/*Submit*/
+input[type="submit"]{
+  width: 100%;
+  background-color: #feb83c;
+  color: #0a0a23;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+}
+input[type="submit"]:hover{
+  cursor:pointer;
+}
+input[type="submit"]:active{
+  background-color: #feb83c;
+  transform: translateY(2px);
+} 
+
+/* FOOTER */
+footer{
+  margin: 0 auto;
+  padding: 48px 24px;
+  text-align: center;
+}
+
